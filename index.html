@@ -162,7 +162,7 @@
         <!-- PORTUGUÊS -->
         <div id="content-pt" class="content active">
             <h1>Política de Privacidade - Orçamento Pessoal</h1>
-            <p class="last-updated"><strong>Última atualização:</strong> [DATA ATUAL]</p>
+            <p class="last-updated"><strong>Última atualização:</strong> <span class="update-date">09 de dezembro de 2025</span></p>
 
             <h2>1. Introdução</h2>
             <p>Esta Política de Privacidade descreve como o aplicativo "Orçamento Pessoal" ("nós", "nosso" ou "aplicativo") coleta, usa e protege suas informações pessoais. Respeitamos sua privacidade e estamos comprometidos em proteger seus dados pessoais.</p>
@@ -278,7 +278,7 @@
             <div class="contact">
                 <h2>13. Contato</h2>
                 <p>Se você tiver dúvidas sobre esta Política de Privacidade ou sobre como tratamos seus dados pessoais, entre em contato conosco através de:</p>
-                <p><strong>Email:</strong> [SEU EMAIL AQUI]<br>
+                <p><strong>Email:</strong> <span class="contact-email">solucoesemti.jl@gmail.com</span><br>
                 <strong>Desenvolvedor:</strong> Jackson Lira</p>
             </div>
 
@@ -293,7 +293,7 @@
         <!-- INGLÊS -->
         <div id="content-en" class="content">
             <h1>Privacy Policy - Personal Budget</h1>
-            <p class="last-updated"><strong>Last updated:</strong> [CURRENT DATE]</p>
+            <p class="last-updated"><strong>Last updated:</strong> <span class="update-date">09 de dezembro de 2025</span></p>
 
             <h2>1. Introduction</h2>
             <p>This Privacy Policy describes how the "Personal Budget" application ("we", "our" or "app") collects, uses and protects your personal information. We respect your privacy and are committed to protecting your personal data.</p>
@@ -409,7 +409,7 @@
             <div class="contact">
                 <h2>13. Contact</h2>
                 <p>If you have questions about this Privacy Policy or how we handle your personal data, please contact us at:</p>
-                <p><strong>Email:</strong> [YOUR EMAIL HERE]<br>
+                <p><strong>Email:</strong> <span class="contact-email">solucoesemti.jl@gmail.com</span><br>
                 <strong>Developer:</strong> Jackson Lira</p>
             </div>
 
@@ -424,7 +424,7 @@
         <!-- ESPANHOL -->
         <div id="content-es" class="content">
             <h1>Política de Privacidad - Presupuesto Personal</h1>
-            <p class="last-updated"><strong>Última actualización:</strong> [FECHA ACTUAL]</p>
+            <p class="last-updated"><strong>Última actualización:</strong> <span class="update-date">09 de dezembro de 2025</span></p>
 
             <h2>1. Introducción</h2>
             <p>Esta Política de Privacidad describe cómo la aplicación "Presupuesto Personal" ("nosotros", "nuestro" o "aplicación") recopila, usa y protege su información personal. Respetamos su privacidad y estamos comprometidos a proteger sus datos personales.</p>
@@ -540,7 +540,7 @@
             <div class="contact">
                 <h2>13. Contacto</h2>
                 <p>Si tiene preguntas sobre esta Política de Privacidad o sobre cómo manejamos sus datos personales, contáctenos a través de:</p>
-                <p><strong>Email:</strong> [SU EMAIL AQUÍ]<br>
+                <p><strong>Email:</strong> <span class="contact-email">solucoesemti.jl@gmail.com</span><br>
                 <strong>Desarrollador:</strong> Jackson Lira</p>
             </div>
 
@@ -554,6 +554,26 @@
     </div>
 
     <script>
+        // ============================================
+        // VARIÁVEIS GLOBAIS - ATUALIZE AQUI
+        // ============================================
+        const CONTACT_EMAIL = 'solucoesemti.jl@gmail.com';
+        const UPDATE_DATE = '09 de dezembro de 2025';
+        // ============================================
+        
+        // Função para preencher email e data em todos os idiomas
+        function updateContactInfo() {
+            // Atualizar emails
+            document.querySelectorAll('.contact-email').forEach(element => {
+                element.textContent = CONTACT_EMAIL;
+            });
+            
+            // Atualizar datas
+            document.querySelectorAll('.update-date').forEach(element => {
+                element.textContent = UPDATE_DATE;
+            });
+        }
+        
         // Função para mudar o idioma
         function changeLanguage(lang) {
             // Esconder todos os conteúdos
@@ -579,6 +599,9 @@
         
         // Carregar idioma salvo ao carregar a página
         window.addEventListener('DOMContentLoaded', function() {
+            // Preencher informações de contato e data
+            updateContactInfo();
+            
             const savedLang = localStorage.getItem('preferredLanguage') || 'pt';
             changeLanguage(savedLang);
         });
