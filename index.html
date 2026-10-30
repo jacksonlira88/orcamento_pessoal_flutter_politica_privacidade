@@ -162,7 +162,7 @@
         <!-- PORTUGUÊS -->
         <div id="content-pt" class="content active">
             <h1>Política de Privacidade - Orçamento Pessoal</h1>
-            <p class="last-updated"><strong>Última atualização:</strong> <span class="update-date">09 de dezembro de 2025</span></p>
+            <p class="last-updated"><strong>Última atualização:</strong> <span class="update-date">30 de outubro de 2026</span></p>
 
             <h2>1. Introdução</h2>
             <p>Esta Política de Privacidade descreve como o aplicativo "Orçamento Pessoal" ("nós", "nosso" ou "aplicativo") coleta, usa e protege suas informações pessoais. Respeitamos sua privacidade e estamos comprometidos em proteger seus dados pessoais.</p>
@@ -182,14 +182,15 @@
             <ul>
                 <li>Status de ativação da autenticação biométrica (apenas se você optar por ativar)</li>
                 <li>Status de ativação de notificações</li>
-                <li>Código PIN de segurança (se configurado)</li>
+                <li>Idioma e país escolhidos</li>
+                <li>Data da primeira abertura do aplicativo, usada apenas para definir o acesso a funcionalidades futuras</li>
             </ul>
 
             <h3>2.3 Dados de Uso</h3>
             <p>O aplicativo não coleta dados de uso, estatísticas de navegação ou informações sobre como você usa o aplicativo.</p>
 
             <div class="highlight">
-                <strong>IMPORTANTE:</strong> Todos os seus dados são armazenados exclusivamente no seu dispositivo móvel. Não enviamos dados para servidores externos.
+                <strong>IMPORTANTE:</strong> Seus dados ficam no seu dispositivo móvel. Não temos servidores e não recebemos seus dados.
             </div>
 
             <h2>3. Como Usamos Suas Informações</h2>
@@ -204,7 +205,7 @@
             <h2>4. Armazenamento de Dados</h2>
             
             <h3>4.1 Armazenamento Local</h3>
-            <p><strong>Todos os seus dados são armazenados exclusivamente no seu dispositivo móvel.</strong> Não enviamos, transmitimos ou sincronizamos seus dados com servidores externos, serviços em nuvem ou terceiros.</p>
+            <p><strong>Seus dados são armazenados no seu dispositivo móvel.</strong> Não temos servidores e não recebemos nem sincronizamos seus dados. Eles só saem do dispositivo nos casos descritos nos itens 4.2 e 4.3.</p>
             <p>Os dados são armazenados em:</p>
             <ul>
                 <li>Banco de dados SQLite local no dispositivo</li>
@@ -216,8 +217,11 @@
             <ul>
                 <li>Você escolhe onde salvar o arquivo de backup</li>
                 <li>O backup é armazenado apenas no local que você selecionar</li>
-                <li>Nenhum backup é enviado automaticamente para serviços externos</li>
+                <li>Esse backup não é enviado automaticamente para serviços externos</li>
             </ul>
+
+            <h3>4.3 Backup automático do Android</h3>
+            <p>Se o backup estiver ativado no seu aparelho Android, o sistema pode copiar os dados do aplicativo para a sua conta Google, incluindo dados financeiros e preferências. Esse serviço é do Google e não temos acesso a essas cópias. Você pode desativá-lo nas configurações do aparelho.</p>
 
             <h2>5. Permissões do Aplicativo</h2>
             <p>O aplicativo solicita as seguintes permissões:</p>
@@ -230,21 +234,25 @@
             <h3>5.2 Notificações (Opcional)</h3>
             <ul>
                 <li><strong>POST_NOTIFICATIONS:</strong> Usada para enviar notificações locais sobre vencimentos de contas, apenas se você ativar essa funcionalidade.</li>
-                <li><strong>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM:</strong> Usadas para agendar notificações precisas sobre vencimentos.</li>
+                <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Usada para reagendar as notificações depois que o aparelho é reiniciado.</li>
             </ul>
 
-            <p>Todas as permissões são opcionais e você pode desativá-las a qualquer momento nas configurações do aplicativo ou do dispositivo.</p>
+            <h3>5.3 Internet</h3>
+            <ul>
+                <li><strong>INTERNET / ACCESS_NETWORK_STATE:</strong> Incluídas por bibliotecas usadas no aplicativo. O aplicativo não as usa para enviar seus dados.</li>
+            </ul>
+
+            <p>Biometria e notificações são opcionais, e você pode desativá-las a qualquer momento nas configurações do aplicativo ou do dispositivo.</p>
 
             <h2>6. Compartilhamento de Dados</h2>
-            <p><strong>Não compartilhamos, vendemos ou divulgamos seus dados pessoais ou financeiros com terceiros.</strong> Seus dados permanecem exclusivamente no seu dispositivo, exceto quando você opta por fazer backup manualmente.</p>
+            <p><strong>Não compartilhamos, vendemos ou divulgamos seus dados pessoais ou financeiros com terceiros.</strong> Seus dados permanecem no seu dispositivo, exceto quando você envia um backup ou uma exportação para outro local ou quando o backup automático do Android está ativado (item 4.3).</p>
 
             <h2>7. Segurança dos Dados</h2>
             <p>Implementamos medidas de segurança para proteger seus dados:</p>
             <ul>
-                <li>Armazenamento local criptografado pelo sistema operacional</li>
+                <li>Proteção de armazenamento oferecida pelo sistema operacional do dispositivo</li>
                 <li>Autenticação biométrica opcional para acesso ao aplicativo</li>
-                <li>Código PIN opcional para proteção adicional</li>
-                <li>Dados não transmitidos pela internet</li>
+                <li>O aplicativo não envia seus dados para servidores nossos</li>
             </ul>
 
             <h2>8. Seus Direitos</h2>
@@ -252,12 +260,12 @@
             <ul>
                 <li><strong>Acesso:</strong> Você pode visualizar todos os seus dados diretamente no aplicativo</li>
                 <li><strong>Correção:</strong> Você pode editar ou excluir qualquer informação a qualquer momento</li>
-                <li><strong>Exclusão:</strong> Você pode excluir todos os dados desinstalando o aplicativo ou usando a funcionalidade de reset</li>
-                <li><strong>Portabilidade:</strong> Você pode exportar seus dados através da funcionalidade de backup</li>
+                <li><strong>Exclusão:</strong> Você pode excluir todos os dados desinstalando o aplicativo ou limpando os dados dele nas configurações do dispositivo</li>
+                <li><strong>Portabilidade:</strong> Você pode exportar seus dados através do backup ou da exportação para Excel</li>
             </ul>
 
             <h2>9. Retenção de Dados</h2>
-            <p>Seus dados são mantidos no dispositivo enquanto você usar o aplicativo. Quando você desinstala o aplicativo, todos os dados locais são removidos automaticamente pelo sistema operacional.</p>
+            <p>Seus dados são mantidos no dispositivo enquanto você usar o aplicativo. Quando você desinstala o aplicativo, todos os dados locais são removidos automaticamente pelo sistema operacional. As cópias do backup automático do Android seguem as regras da sua conta Google.</p>
 
             <h2>10. Serviços de Terceiros</h2>
             <p>O aplicativo utiliza as seguintes bibliotecas de código aberto:</p>
@@ -266,8 +274,9 @@
                 <li><strong>local_auth:</strong> Para autenticação biométrica (processada localmente)</li>
                 <li><strong>flutter_local_notifications:</strong> Para notificações locais</li>
                 <li><strong>file_picker:</strong> Para seleção de arquivos de backup</li>
+                <li><strong>in_app_purchase:</strong> Biblioteca de compras do Google Play, incluída no aplicativo, mas inativa nesta versão, que não oferece compras</li>
             </ul>
-            <p>Essas bibliotecas não coletam ou transmitem seus dados pessoais.</p>
+            <p>Nesta versão, essas bibliotecas não coletam nem transmitem seus dados pessoais.</p>
 
             <h2>11. Privacidade de Menores</h2>
             <p>O aplicativo não coleta intencionalmente informações de menores de 13 anos. Se você é pai ou responsável e acredita que seu filho forneceu informações pessoais através do aplicativo, entre em contato conosco.</p>
@@ -286,14 +295,14 @@
             <p>Ao usar este aplicativo, você consente com esta Política de Privacidade. Se você não concordar com esta política, por favor, não use o aplicativo.</p>
 
             <div class="highlight">
-                <strong>Nota Importante:</strong> Este aplicativo funciona completamente offline. Nenhum dado é transmitido pela internet, exceto quando você explicitamente opta por fazer backup em um serviço de armazenamento em nuvem de sua escolha (como Google Drive, Dropbox, etc.), e nesse caso, os termos de privacidade do serviço escolhido se aplicam.
+                <strong>Nota Importante:</strong> Este aplicativo funciona offline. Seus dados só saem do dispositivo quando você envia um backup ou uma exportação para um serviço de sua escolha (como Google Drive, Dropbox, etc.) ou pelo backup automático do Android (item 4.3). Nesses casos, os termos de privacidade do serviço usado se aplicam.
             </div>
         </div>
 
         <!-- INGLÊS -->
         <div id="content-en" class="content">
             <h1>Privacy Policy - Personal Budget</h1>
-            <p class="last-updated"><strong>Last updated:</strong> <span class="update-date">09 de dezembro de 2025</span></p>
+            <p class="last-updated"><strong>Last updated:</strong> <span class="update-date">30 de outubro de 2026</span></p>
 
             <h2>1. Introduction</h2>
             <p>This Privacy Policy describes how the "Personal Budget" application ("we", "our" or "app") collects, uses and protects your personal information. We respect your privacy and are committed to protecting your personal data.</p>
@@ -313,14 +322,15 @@
             <ul>
                 <li>Biometric authentication activation status (only if you choose to activate)</li>
                 <li>Notification activation status</li>
-                <li>Security PIN code (if configured)</li>
+                <li>Selected language and country</li>
+                <li>Date the app was first opened, used only to determine access to future features</li>
             </ul>
 
             <h3>2.3 Usage Data</h3>
             <p>The app does not collect usage data, navigation statistics or information about how you use the app.</p>
 
             <div class="highlight">
-                <strong>IMPORTANT:</strong> All your data is stored exclusively on your mobile device. We do not send data to external servers.
+                <strong>IMPORTANT:</strong> Your data stays on your mobile device. We have no servers and do not receive your data.
             </div>
 
             <h2>3. How We Use Your Information</h2>
@@ -335,7 +345,7 @@
             <h2>4. Data Storage</h2>
             
             <h3>4.1 Local Storage</h3>
-            <p><strong>All your data is stored exclusively on your mobile device.</strong> We do not send, transmit or sync your data with external servers, cloud services or third parties.</p>
+            <p><strong>Your data is stored on your mobile device.</strong> We have no servers and do not receive or sync your data. It only leaves the device in the cases described in items 4.2 and 4.3.</p>
             <p>Data is stored in:</p>
             <ul>
                 <li>Local SQLite database on the device</li>
@@ -347,8 +357,11 @@
             <ul>
                 <li>You choose where to save the backup file</li>
                 <li>The backup is stored only in the location you select</li>
-                <li>No backup is automatically sent to external services</li>
+                <li>This backup is not automatically sent to external services</li>
             </ul>
+
+            <h3>4.3 Android automatic backup</h3>
+            <p>If backup is turned on for your Android device, the system may copy the app's data to your Google account, including financial data and preferences. This service is provided by Google and we have no access to these copies. You can turn it off in your device settings.</p>
 
             <h2>5. App Permissions</h2>
             <p>The app requests the following permissions:</p>
@@ -361,21 +374,25 @@
             <h3>5.2 Notifications (Optional)</h3>
             <ul>
                 <li><strong>POST_NOTIFICATIONS:</strong> Used to send local notifications about bill due dates, only if you enable this feature.</li>
-                <li><strong>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM:</strong> Used to schedule precise notifications about due dates.</li>
+                <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Used to reschedule notifications after the device restarts.</li>
             </ul>
 
-            <p>All permissions are optional and you can disable them at any time in the app or device settings.</p>
+            <h3>5.3 Internet</h3>
+            <ul>
+                <li><strong>INTERNET / ACCESS_NETWORK_STATE:</strong> Included by libraries used in the app. The app does not use them to send your data.</li>
+            </ul>
+
+            <p>Biometrics and notifications are optional, and you can disable them at any time in the app or device settings.</p>
 
             <h2>6. Data Sharing</h2>
-            <p><strong>We do not share, sell or disclose your personal or financial data with third parties.</strong> Your data remains exclusively on your device, except when you choose to manually backup.</p>
+            <p><strong>We do not share, sell or disclose your personal or financial data with third parties.</strong> Your data remains on your device, except when you send a backup or export to another location or when Android automatic backup is turned on (item 4.3).</p>
 
             <h2>7. Data Security</h2>
             <p>We implement security measures to protect your data:</p>
             <ul>
-                <li>Local storage encrypted by the operating system</li>
+                <li>Storage protection provided by the device's operating system</li>
                 <li>Optional biometric authentication for app access</li>
-                <li>Optional PIN code for additional protection</li>
-                <li>Data not transmitted over the internet</li>
+                <li>The app does not send your data to servers of ours</li>
             </ul>
 
             <h2>8. Your Rights</h2>
@@ -383,12 +400,12 @@
             <ul>
                 <li><strong>Access:</strong> You can view all your data directly in the app</li>
                 <li><strong>Correction:</strong> You can edit or delete any information at any time</li>
-                <li><strong>Deletion:</strong> You can delete all data by uninstalling the app or using the reset feature</li>
-                <li><strong>Portability:</strong> You can export your data through the backup feature</li>
+                <li><strong>Deletion:</strong> You can delete all data by uninstalling the app or clearing its data in the device settings</li>
+                <li><strong>Portability:</strong> You can export your data through the backup or the Excel export</li>
             </ul>
 
             <h2>9. Data Retention</h2>
-            <p>Your data is kept on the device while you use the app. When you uninstall the app, all local data is automatically removed by the operating system.</p>
+            <p>Your data is kept on the device while you use the app. When you uninstall the app, all local data is automatically removed by the operating system. Android automatic backup copies follow the rules of your Google account.</p>
 
             <h2>10. Third-Party Services</h2>
             <p>The app uses the following open-source libraries:</p>
@@ -397,8 +414,9 @@
                 <li><strong>local_auth:</strong> For biometric authentication (processed locally)</li>
                 <li><strong>flutter_local_notifications:</strong> For local notifications</li>
                 <li><strong>file_picker:</strong> For backup file selection</li>
+                <li><strong>in_app_purchase:</strong> Google Play purchases library, included in the app but inactive in this version, which offers no purchases</li>
             </ul>
-            <p>These libraries do not collect or transmit your personal data.</p>
+            <p>In this version, these libraries do not collect or transmit your personal data.</p>
 
             <h2>11. Children's Privacy</h2>
             <p>The app does not knowingly collect information from children under 13 years of age. If you are a parent or guardian and believe your child has provided personal information through the app, please contact us.</p>
@@ -417,14 +435,14 @@
             <p>By using this app, you consent to this Privacy Policy. If you do not agree with this policy, please do not use the app.</p>
 
             <div class="highlight">
-                <strong>Important Note:</strong> This app works completely offline. No data is transmitted over the internet, except when you explicitly choose to backup to a cloud storage service of your choice (such as Google Drive, Dropbox, etc.), and in that case, the privacy terms of the chosen service apply.
+                <strong>Important Note:</strong> This app works offline. Your data only leaves the device when you send a backup or export to a service of your choice (such as Google Drive, Dropbox, etc.) or through Android automatic backup (item 4.3). In these cases, the privacy terms of the service used apply.
             </div>
         </div>
 
         <!-- ESPANHOL -->
         <div id="content-es" class="content">
             <h1>Política de Privacidad - Presupuesto Personal</h1>
-            <p class="last-updated"><strong>Última actualización:</strong> <span class="update-date">09 de dezembro de 2025</span></p>
+            <p class="last-updated"><strong>Última actualización:</strong> <span class="update-date">30 de outubro de 2026</span></p>
 
             <h2>1. Introducción</h2>
             <p>Esta Política de Privacidad describe cómo la aplicación "Presupuesto Personal" ("nosotros", "nuestro" o "aplicación") recopila, usa y protege su información personal. Respetamos su privacidad y estamos comprometidos a proteger sus datos personales.</p>
@@ -444,14 +462,15 @@
             <ul>
                 <li>Estado de activación de autenticación biométrica (solo si opta por activar)</li>
                 <li>Estado de activación de notificaciones</li>
-                <li>Código PIN de seguridad (si está configurado)</li>
+                <li>Idioma y país elegidos</li>
+                <li>Fecha de la primera apertura de la aplicación, usada solo para definir el acceso a funcionalidades futuras</li>
             </ul>
 
             <h3>2.3 Datos de Uso</h3>
             <p>La aplicación no recopila datos de uso, estadísticas de navegación o información sobre cómo usa la aplicación.</p>
 
             <div class="highlight">
-                <strong>IMPORTANTE:</strong> Todos sus datos se almacenan exclusivamente en su dispositivo móvil. No enviamos datos a servidores externos.
+                <strong>IMPORTANTE:</strong> Sus datos permanecen en su dispositivo móvil. No tenemos servidores y no recibimos sus datos.
             </div>
 
             <h2>3. Cómo Usamos Su Información</h2>
@@ -466,7 +485,7 @@
             <h2>4. Almacenamiento de Datos</h2>
             
             <h3>4.1 Almacenamiento Local</h3>
-            <p><strong>Todos sus datos se almacenan exclusivamente en su dispositivo móvil.</strong> No enviamos, transmitimos o sincronizamos sus datos con servidores externos, servicios en la nube o terceros.</p>
+            <p><strong>Sus datos se almacenan en su dispositivo móvil.</strong> No tenemos servidores y no recibimos ni sincronizamos sus datos. Solo salen del dispositivo en los casos descritos en los puntos 4.2 y 4.3.</p>
             <p>Los datos se almacenan en:</p>
             <ul>
                 <li>Base de datos SQLite local en el dispositivo</li>
@@ -478,8 +497,11 @@
             <ul>
                 <li>Usted elige dónde guardar el archivo de respaldo</li>
                 <li>El respaldo se almacena solo en la ubicación que seleccione</li>
-                <li>Ningún respaldo se envía automáticamente a servicios externos</li>
+                <li>Este respaldo no se envía automáticamente a servicios externos</li>
             </ul>
+
+            <h3>4.3 Copia de seguridad automática de Android</h3>
+            <p>Si la copia de seguridad está activada en su dispositivo Android, el sistema puede copiar los datos de la aplicación a su cuenta de Google, incluidos los datos financieros y las preferencias. Este servicio es de Google y no tenemos acceso a esas copias. Puede desactivarlo en la configuración del dispositivo.</p>
 
             <h2>5. Permisos de la Aplicación</h2>
             <p>La aplicación solicita los siguientes permisos:</p>
@@ -492,21 +514,25 @@
             <h3>5.2 Notificaciones (Opcional)</h3>
             <ul>
                 <li><strong>POST_NOTIFICATIONS:</strong> Se usa para enviar notificaciones locales sobre vencimientos de cuentas, solo si activa esta funcionalidad.</li>
-                <li><strong>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM:</strong> Se usan para programar notificaciones precisas sobre vencimientos.</li>
+                <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Se usa para reprogramar las notificaciones después de reiniciar el dispositivo.</li>
             </ul>
 
-            <p>Todos los permisos son opcionales y puede desactivarlos en cualquier momento en la configuración de la aplicación o del dispositivo.</p>
+            <h3>5.3 Internet</h3>
+            <ul>
+                <li><strong>INTERNET / ACCESS_NETWORK_STATE:</strong> Incluidos por bibliotecas usadas en la aplicación. La aplicación no los usa para enviar sus datos.</li>
+            </ul>
+
+            <p>La biometría y las notificaciones son opcionales, y puede desactivarlas en cualquier momento en la configuración de la aplicación o del dispositivo.</p>
 
             <h2>6. Compartir Datos</h2>
-            <p><strong>No compartimos, vendemos o divulgamos sus datos personales o financieros con terceros.</strong> Sus datos permanecen exclusivamente en su dispositivo, excepto cuando opta por hacer respaldo manualmente.</p>
+            <p><strong>No compartimos, vendemos o divulgamos sus datos personales o financieros con terceros.</strong> Sus datos permanecen en su dispositivo, excepto cuando envía un respaldo o una exportación a otro lugar o cuando la copia de seguridad automática de Android está activada (punto 4.3).</p>
 
             <h2>7. Seguridad de los Datos</h2>
             <p>Implementamos medidas de seguridad para proteger sus datos:</p>
             <ul>
-                <li>Almacenamiento local cifrado por el sistema operativo</li>
+                <li>Protección de almacenamiento ofrecida por el sistema operativo del dispositivo</li>
                 <li>Autenticación biométrica opcional para acceso a la aplicación</li>
-                <li>Código PIN opcional para protección adicional</li>
-                <li>Datos no transmitidos por internet</li>
+                <li>La aplicación no envía sus datos a servidores nuestros</li>
             </ul>
 
             <h2>8. Sus Derechos</h2>
@@ -514,12 +540,12 @@
             <ul>
                 <li><strong>Acceso:</strong> Puede ver todos sus datos directamente en la aplicación</li>
                 <li><strong>Corrección:</strong> Puede editar o eliminar cualquier información en cualquier momento</li>
-                <li><strong>Eliminación:</strong> Puede eliminar todos los datos desinstalando la aplicación o usando la funcionalidad de reinicio</li>
-                <li><strong>Portabilidad:</strong> Puede exportar sus datos a través de la funcionalidad de respaldo</li>
+                <li><strong>Eliminación:</strong> Puede eliminar todos los datos desinstalando la aplicación o borrando sus datos en la configuración del dispositivo</li>
+                <li><strong>Portabilidad:</strong> Puede exportar sus datos a través del respaldo o de la exportación a Excel</li>
             </ul>
 
             <h2>9. Retención de Datos</h2>
-            <p>Sus datos se mantienen en el dispositivo mientras use la aplicación. Cuando desinstala la aplicación, todos los datos locales se eliminan automáticamente por el sistema operativo.</p>
+            <p>Sus datos se mantienen en el dispositivo mientras use la aplicación. Cuando desinstala la aplicación, todos los datos locales se eliminan automáticamente por el sistema operativo. Las copias de seguridad automáticas de Android siguen las reglas de su cuenta de Google.</p>
 
             <h2>10. Servicios de Terceros</h2>
             <p>La aplicación utiliza las siguientes bibliotecas de código abierto:</p>
@@ -528,8 +554,9 @@
                 <li><strong>local_auth:</strong> Para autenticación biométrica (procesada localmente)</li>
                 <li><strong>flutter_local_notifications:</strong> Para notificaciones locales</li>
                 <li><strong>file_picker:</strong> Para selección de archivos de respaldo</li>
+                <li><strong>in_app_purchase:</strong> Biblioteca de compras de Google Play, incluida en la aplicación, pero inactiva en esta versión, que no ofrece compras</li>
             </ul>
-            <p>Estas bibliotecas no recopilan ni transmiten sus datos personales.</p>
+            <p>En esta versión, estas bibliotecas no recopilan ni transmiten sus datos personales.</p>
 
             <h2>11. Privacidad de Menores</h2>
             <p>La aplicación no recopila intencionalmente información de menores de 13 años. Si usted es padre o tutor y cree que su hijo ha proporcionado información personal a través de la aplicación, contáctenos.</p>
@@ -548,7 +575,7 @@
             <p>Al usar esta aplicación, usted consiente esta Política de Privacidad. Si no está de acuerdo con esta política, por favor no use la aplicación.</p>
 
             <div class="highlight">
-                <strong>Nota Importante:</strong> Esta aplicación funciona completamente sin conexión. Ningún dato se transmite por internet, excepto cuando explícitamente opta por hacer respaldo en un servicio de almacenamiento en la nube de su elección (como Google Drive, Dropbox, etc.), y en ese caso, se aplican los términos de privacidad del servicio elegido.
+                <strong>Nota Importante:</strong> Esta aplicación funciona sin conexión. Sus datos solo salen del dispositivo cuando envía un respaldo o una exportación a un servicio de su elección (como Google Drive, Dropbox, etc.) o mediante la copia de seguridad automática de Android (punto 4.3). En esos casos, se aplican los términos de privacidad del servicio usado.
             </div>
         </div>
     </div>
@@ -558,7 +585,7 @@
         // VARIÁVEIS GLOBAIS - ATUALIZE AQUI
         // ============================================
         const CONTACT_EMAIL = 'solucoesemti.jl@gmail.com';
-        const UPDATE_DATE = '09 de dezembro de 2025';
+        const UPDATE_DATE = '30 de outubro de 2026';
         // ============================================
         
         // Função para preencher email e data em todos os idiomas
